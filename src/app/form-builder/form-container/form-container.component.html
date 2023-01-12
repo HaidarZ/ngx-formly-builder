@@ -1,0 +1,5 @@
+<div class="content">
+  <div cdkDropList (cdkDropListDropped)="drop($event)" class="drop-area">
+    <app-form-item *ngFor="let formField of formFields" [formField]="formField" ></app-form-item>
+  </div>
+</div>

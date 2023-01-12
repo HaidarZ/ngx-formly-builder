@@ -1,0 +1,20 @@
+<div class="form-item" [class.active]="active" cdkDrag [cdkDragData]="field">
+  <!-- Template When drag inside container -->
+  <div class="example-custom-placeholder" *cdkDragPlaceholder>
+    <h3>Place item here</h3>
+  </div>
+
+  <!-- Actual form -->
+  <div class="actions">
+    <button cdkDragHandle mat-icon-button>
+      <mat-icon>drag_indicator</mat-icon>
+    </button>
+    <span (click)="activate($event)" class="spacer"></span>
+    <button mat-icon-button (click)="removeItem()">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+  <form>
+    <formly-form [fields]="[_formField?.field]"></formly-form>
+  </form>
+</div>

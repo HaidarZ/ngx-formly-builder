@@ -1,0 +1,41 @@
+<form [formGroup]="form" class="p-3">
+
+  <mat-tab-group>
+    <mat-tab label="Template Options" formGroupName="templateOptions">
+
+      <div class="row g-3 p-2">
+        <mat-form-field appearance="fill" class="col-12">
+          <mat-label>Label</mat-label>
+          <input type="text" matInput formControlName="label">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="col-12">
+          <mat-label>Placeholder</mat-label>
+          <input type="text" matInput formControlName="placeholder">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="col-12">
+          <mat-label>Description</mat-label>
+          <input type="text" matInput formControlName="description">
+        </mat-form-field>
+
+        <mat-checkbox class="col-12" formControlName="required">Required</mat-checkbox>
+
+        <mat-checkbox class="col-12" formControlName="disabled">Disabled</mat-checkbox>
+      </div>
+
+
+    </mat-tab>
+
+    <mat-tab label="Other">
+    
+      <mat-form-field appearance="fill" class="col-12">
+        <mat-label>ID</mat-label>
+        <input type="text" matInput formControlName="id">
+      </mat-form-field>
+  
+    </mat-tab>
+
+  </mat-tab-group>
+
+</form>
