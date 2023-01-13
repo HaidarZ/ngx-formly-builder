@@ -4,8 +4,8 @@
      [cdkDropListEnterPredicate]="noReturnPredicate"
      (cdkDropListExited)="onSourceListExited($event)"
      (cdkDropListEntered)="onSourceListEntered($event)"
-     class="components-panel">     
-  <app-panel-item [class.fade]="item.temp" cdkDrag [cdkDragData]="item"
+     class="components-panel">
+  <app-panel-item [class.fade]="item['temp']" cdkDrag [cdkDragData]="item"
                   *ngFor="let item of fields"
                   [title]="item.title" [icon]="item.icon"></app-panel-item>
 </div>

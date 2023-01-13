@@ -98,7 +98,7 @@ export class FormBuilderService {
   }
 
   removeTempFields() {
-    this.fieldTypes = [...this.fieldTypes.filter(i => !i?.temp)];
+    this.fieldTypes = [...this.fieldTypes.filter(i => !i?.['temp'])];
   }
 
   activateFormField(formField: any) {
